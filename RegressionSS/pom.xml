@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.netapp.supportsite</groupId>
+	<artifactId>supportsite-regression</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>supportsite-regression</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- <dependency> <groupId>com.ust.sarf</groupId> <artifactId>sarf-framework</artifactId> 
+			<version>1.0.0</version> <scope>system</scope> <systemPath>${basedir}/lib/sarf-framework-1.0.jar</systemPath> 
+			</dependency> -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.sqlsheet</groupId>
+			<artifactId>sqlsheet</artifactId>
+			<version>6.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.53.0</version>
+		</dependency>
+		<dependency>
+   		 <groupId>javax.mail</groupId>
+   		 <artifactId>mail</artifactId>
+  	 	 <version>1.4</version>
+		</dependency> 
+		
+		<!-- >dependency>
+			<groupId>com.ust.sarf</groupId>
+			<artifactId>sarf</artifactId>
+			<version>${project.version}</version>
+		</dependency-->
+		
+		<dependency>
+			<groupId>com.ust.sarf</groupId>
+			<artifactId>sarf-framework</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+
+
+	<build>
+		<testSourceDirectory>${basedir}\src\main\java</testSourceDirectory>
+
+		<plugins>
+
+			<!-- plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<phase>clean</phase>
+						<id>sarf</id>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ust.sarf</groupId>
+							<artifactId>sarf</artifactId>
+							<version>${project.version}</version>
+							<packaging>jar</packaging>
+							<file>${basedir}/lib/ust-sarf-framework-${project.version}.jar</file>
+						</configuration>
+					</execution>
+					<execution>
+						<phase>clean</phase>
+						<id>crypt</id>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ust.crypt</groupId>
+							<artifactId>crypt</artifactId>
+							<version>${project.version}</version>
+							<packaging>jar</packaging>
+							<file>${basedir}/lib/ust-sarf-encrypt-1.0.jar</file>
+						</configuration>
+					</execution-->
+					<!-- execution>
+						<phase>clean</phase>
+						<id>xslb</id>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ust.xslb</groupId>
+							<artifactId>xslb</artifactId>
+							<version>1.0</version>
+							<packaging>jar</packaging>
+							<file>${basedir}/lib/ust-xslb-parser-1.0.jar</file>
+						</configuration>
+					</execution-->
+				<!-- >/executions>
+			</plugin-->
+
+
+
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.ust.sarf.init.init</mainClass>
+					<arguments>
+					</arguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

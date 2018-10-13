@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<machines>
+	<machine>
+		<machineid>localhost</machineid>
+		<portnumber></portnumber>
+		<jobcount>1</jobcount>
+		<active>true</active>
+	</machine>
+	<machine>
+		<machineid>VMWPQEAPP23-TST.hq.netapp.com</machineid>
+		<portnumber>5555</portnumber>
+		<jobcount>1</jobcount>
+		<active>false</active>
+	</machine>
+		<machine>
+		<machineid>VMWPQEAPP26-TST.hq.netapp.com</machineid>
+		<portnumber>5555</portnumber>
+		<jobcount>1</jobcount>
+		<active>false</active>
+	</machine>
+	
+	
+</machines>

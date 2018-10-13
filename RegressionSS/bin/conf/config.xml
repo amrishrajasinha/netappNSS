@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<SARFConfig>
+	<BusinessComponent>com.netapp.supportsite.businesscomponents</BusinessComponent>
+	<TestSetFileName>SupportSite_UserRegistration</TestSetFileName>
+	<TestCaseSheetName>TestCases</TestCaseSheetName>
+	<ObjectRepositories>SupportSite_ObjectRepository</ObjectRepositories>
+	<ResultFolder>TestResults</ResultFolder>
+	<ImplicitWaitinSeconds>0</ImplicitWaitinSeconds>
+	<PageLoadTimeoutinSeconds>400</PageLoadTimeoutinSeconds>
+	<ScriptTimeoutinSeconds>60</ScriptTimeoutinSeconds>
+	<WebDriverWaitSeconds>60</WebDriverWaitSeconds>
+	<PollingMilliSeconds>250</PollingMilliSeconds>
+	<RemoteExecution>false</RemoteExecution>
+	<GridHubIPAddress></GridHubIPAddress>
+	<GridHubPort>4444</GridHubPort>
+	<AplicationURL>http://mysupport-tst.corp.netapp.com/</AplicationURL>
+	<FirefoxBinaryPath></FirefoxBinaryPath>
+	<FirefoxProfileName></FirefoxProfileName>
+	<IEServerPath>./drivers/IEDriverServer_64.exe</IEServerPath>
+	<ChromeServerPath>./drivers/chromedriver.exe</ChromeServerPath>
+	<ChromeBinaryPath>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</ChromeBinaryPath>
+	<DownloadPath></DownloadPath>
+	<ElementHighLightOn>true</ElementHighLightOn>
+	<ElementAutoScrollOn>false</ElementAutoScrollOn>
+	<ExecutionMachines>/conf/machines.xml</ExecutionMachines>
+	<SendMail>false</SendMail>
+	<SendMailTo>salba.balakrishnan@ust-global.com</SendMailTo>
+	<SendMailFrom>automation.ustglobal@gmail.com,ustglobal123</SendMailFrom>
+</SARFConfig>

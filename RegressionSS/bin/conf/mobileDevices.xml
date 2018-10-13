@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mobileDevices>
+	<device>
+		<deviceName>SamsungTab2</deviceName>
+		<deviceID>41006223975b6000</deviceID>
+		<appPath>\MobileApp\quoteedge.apk</appPath>
+		<appPackage>com.netapp.ent.quoteedge</appPackage>
+		<appActivity>md56a14bdf0d26133f997466801e95d6e30.QELoginActivity</appActivity>
+		<appiumServerIP>127.0.0.1</appiumServerIP>
+		<appiumServerPort>4733</appiumServerPort>
+		<platformVersion>4.4.2</platformVersion>
+		<platformName>Android</platformName>
+	</device>
+	<device>
+		<deviceName>Iphone6PlusSimulator</deviceName>
+		<deviceID>iPhone6Plus8_1_Appium</deviceID>
+		<appPath>/MobileApp/quoteedgeIPA.ipa</appPath>
+		<appPackage>com.netapp.ent.quoteedge</appPackage>
+		<appActivity>md56a14bdf0d26133f997466801e95d6e30.QELoginActivity</appActivity>
+		<appiumServerIP>127.0.0.1</appiumServerIP>
+		<appiumServerPort>4733</appiumServerPort>
+		<platformVersion>8.1</platformVersion>
+		<platformName>iOS</platformName>
+	</device>
+</mobileDevices>
